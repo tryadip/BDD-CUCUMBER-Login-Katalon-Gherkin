@@ -45,7 +45,7 @@ import cucumber.api.java.en.When
 
 
 class User_login_dengan_menginput_kurang_dari8_karakter {
-	
+
 	@Given("user diarahkan kehalaman login kumparan")
 	def directtopage() {
 		WebUI.openBrowser("https://kumparan.com")
@@ -60,7 +60,7 @@ class User_login_dengan_menginput_kurang_dari8_karakter {
 		WebUI.setText(findTestObject("Login/TxtField/Field_pass"), password)
 		println ("user berhasil menginput credential data")
 	}
-	
+
 	@And("User klik button login pada menu login kumparan")
 	def clickbutton() {
 		WebUI.click(findTestObject("Login/Button/btn_Masuk_Dashboard"))
@@ -70,6 +70,7 @@ class User_login_dengan_menginput_kurang_dari8_karakter {
 	@Then("User mendapatkan error pada field passwor berupa inline (.*)")
 	def verifyText(String error) {
 		WebUI.verifyTextPresent(error, false)
+		WebUI.takeScreenshot("C:/Users/user/Documents/Latihan Testing/Report katalon/BDD Report Login Katalon/Login_Neg_Login dengan menginput kurang dari 8 karakter.png")
 		println("User menerima inline error pada field password")
 	}
 }

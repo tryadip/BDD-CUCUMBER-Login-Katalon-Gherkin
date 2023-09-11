@@ -66,10 +66,11 @@ class Klik_login_tanpa_mengisi_field_password {
 		WebUI.click(findTestObject("Login/Button/btn_Masuk_Dashboard"))
 		println("User berhasil mengklik button masuk")
 	}
-	
+
 	@Then("User menerima informasi (.*) berupa inline error pada field password")
 	def verifyerror (String error) {
 		WebUI.verifyTextPresent(error, false)
+		WebUI.takeScreenshot("C:/Users/user/Documents/Latihan Testing/Report katalon/BDD Report Login Katalon/Login_Neg_Login tanpa mengisi field password.png")
 		println("User menerima inline error pada field password")
 	}
 }

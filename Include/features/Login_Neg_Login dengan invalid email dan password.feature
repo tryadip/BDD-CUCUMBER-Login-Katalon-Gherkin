@@ -18,7 +18,8 @@
 #Sample Feature Definition Template
 @tag
 Feature: User mendapatkan inline error email atau password salah ketika user mengisi field password dan email
-s
+  s
+
   @tag1
   Scenario Outline: user menginput data invalid password atau email
     Given user berhasil masuk ke halaman login
@@ -27,6 +28,6 @@ s
     Then user mendapatkan <error> pada field email dan password
 
     Examples: 
-      | email                | password | error                     |
-      | mugupugu1@gmail.com  | Mau14    | Email atau Password Salah |
-      | mugupugu14@gmail.com | Maumau14 | Email atau Password Salah |
+      | email                | password     | error                     |
+      | mugupugu1@gmail.com  | Mau14dadadad | Email atau Password Salah |
+      | mugupugu14@gmail.com | Maumau14     | Email atau Password Salah |

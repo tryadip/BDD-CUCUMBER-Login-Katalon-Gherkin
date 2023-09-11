@@ -55,7 +55,7 @@ class klik_button_login_tanpa_mengisi_field_email {
 		WebUI.click(findTestObject("Login/Button/btn_Login"))
 		println ("berhasil kehalaman login")
 	}
-	
+
 	@When("user hanya menginput field (.*)")
 	def inputfieldemail(String password) {
 		WebUI.setText(findTestObject("Login/TxtField/Field_pass"), password)
@@ -67,5 +67,6 @@ class klik_button_login_tanpa_mengisi_field_email {
 	@Then("user menerima informasi berupa inline (.*) pada field email")
 	def verifyinline(String error) {
 		WebUI.verifyTextPresent(error, false)
+		WebUI.takeScreenshot("C:/Users/user/Documents/Latihan Testing/Report katalon/BDD Report Login Katalon/Login_Neg_Login tanpa mengisi field email.png")
 	}
 }

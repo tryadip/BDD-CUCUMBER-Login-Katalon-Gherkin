@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "7F31211C6A0A6C2141B548C142074C40",
+  "keywordFileContentHash": "355BA1CFF1461A1B583006C80A9C7FEC",
   "keywordClasses": [
     {
       "name": "login.Login_dengan_invalid_format_email",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

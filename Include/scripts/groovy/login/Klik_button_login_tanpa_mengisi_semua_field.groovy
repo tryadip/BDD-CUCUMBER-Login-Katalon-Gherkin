@@ -43,11 +43,8 @@ import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 
-
 class Klik_button_login_tanpa_mengisi_semua_field {
-	/**
-	 * The step definitions below match with Katalon sample Gherkin steps
-	 */
+	
 	@Given("User masuk kehalaman login kumparan")
 	def Directtopage() {
 		WebUI.openBrowser("https://kumparan.com")
@@ -68,6 +65,7 @@ class Klik_button_login_tanpa_mengisi_semua_field {
 	@Then("user mendapatkan inline (.*)")
 	def verifyText(String url) {
 		WebUI.verifyTextPresent(url, false)
+		WebUI.takeScreenshot("C:/Users/user/Documents/Latihan Testing/Report katalon/BDD Report Login Katalon/Login_Neg_klik button tanpa mengisi semua field.png")
 		println ("User mendapatkan inline error")
 	}
 }

@@ -70,5 +70,6 @@ class Login_dengan_invalid_email_atau_password {
 	@Then("user mendapatkan (.*) pada field email dan password")
 	def verifytext(String error) {
 		WebUI.verifyTextPresent(error, false)
+		WebUI.takeScreenshot("C:/Users/user/Documents/Latihan Testing/Report katalon/BDD Report Login Katalon/Login_Neg_Login dengan invalid email atau password.png")
 	}
 }

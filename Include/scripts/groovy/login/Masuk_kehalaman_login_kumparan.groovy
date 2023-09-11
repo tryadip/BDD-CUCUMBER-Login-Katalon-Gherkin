@@ -64,6 +64,7 @@ class Masuk_kehalaman_login_kumparan {
 	@Then("user masuk kehalaman login kumparan")
 	def verifyPage() {
 		WebUI.verifyElementPresent(findTestObject("Login/Button/btn_Masuk_Dashboard"), 0)
+		WebUI.takeScreenshot("C:/Users/user/Documents/Latihan Testing/Report katalon/BDD Report Login Katalon/Login_Neg_Masuk kehalaman login kumparan.png")
 		println ("User berhasil kehalaman login")
 	}
 }

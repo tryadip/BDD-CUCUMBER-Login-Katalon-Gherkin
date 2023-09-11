@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "60C488185770169B80AB9E07FA2FC838",
+  "keywordFileContentHash": "9DCE2580C604364F09D32B1D66E403E2",
   "keywordClasses": [
     {
       "name": "login.User_login_dengan_menginput_kurang_dari8_karakter",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

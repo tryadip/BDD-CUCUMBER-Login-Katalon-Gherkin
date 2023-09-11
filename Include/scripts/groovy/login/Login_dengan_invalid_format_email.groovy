@@ -52,7 +52,7 @@ class Login_dengan_invalid_format_email {
 		WebUI.click(findTestObject("Login/Button/btn_Login"))
 		println("user berhasil masuk kehalaman login")
 	}
-	
+
 	@When("user input dengan invalid (.*) dan (.*) yang valid")
 	def inputcredential(String email, String password) {
 		WebUI.setText(findTestObject("Login/TxtField/Field_email"), email)
@@ -62,10 +62,10 @@ class Login_dengan_invalid_format_email {
 	def klikbutton() {
 		WebUI.click(findTestObject("Login/Button/btn_Masuk_Dashboard"))
 	}
-	
+
 	@Then("user mendapatkan (.*) invalid pada field email")
 	def verifytext(String error) {
 		WebUI.verifyTextPresent(error, false)
+		WebUI.takeScreenshot("C:/Users/user/Documents/Latihan Testing/Report katalon/BDD Report Login Katalon/Login_Neg_Login dengan invalid format email.png")
 	}
-	
 }
