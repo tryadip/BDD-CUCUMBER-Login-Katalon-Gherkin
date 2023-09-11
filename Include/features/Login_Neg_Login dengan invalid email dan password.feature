@@ -18,7 +18,7 @@
 #Sample Feature Definition Template
 @tag
 Feature: User mendapatkan inline error email atau password salah ketika user mengisi field password dan email
-
+s
   @tag1
   Scenario Outline: user menginput data invalid password atau email
     Given user berhasil masuk ke halaman login
